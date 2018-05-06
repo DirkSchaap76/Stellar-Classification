@@ -5,7 +5,8 @@
 package starClasses;
 
 public class G_Type {
-	public static final int MIN_TEMPERATURE = 0; // 0 is a temporary value
-	public static final int MAX_TEMPERATURE = 0; // 0 is a temporary value
+	// temperatures are in degrees Kelvin
+	public static final int MIN_TEMPERATURE = 5200;
+	public static final int MAX_TEMPERATURE = 6000;
 
 }
