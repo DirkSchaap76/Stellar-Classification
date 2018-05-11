@@ -17,10 +17,11 @@ public class Start {
 		System.out.println("Choose 1 to  bla bla");
 		System.out.println("Choose 2 to bla bla some more");
 		System.out.println("Choose q to quit.");
-		String option = input.nextLine();
+
 
 		boolean keepGoing = true;
 		while (keepGoing) {
+			String option = input.nextLine();
 			switch (option) {
 			case "1":
 				System.out.println("You chose 1");
