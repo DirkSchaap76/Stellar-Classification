@@ -14,27 +14,28 @@ public class Start {
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("Here will be a menu.\n");
-		System.out.println("Choose 1 to  bla bla");
+		System.out.println("Option 1: add a new star.");
 		System.out.println("Choose 2 to bla bla some more");
 		System.out.println("Choose q to quit.");
 
-
-		boolean keepGoing = true;
-		while (keepGoing) {
+		while (true) {
 			String option = input.nextLine();
 			switch (option) {
 			case "1":
-				System.out.println("You chose 1");
+				System.out.println("New star added!");
+				// do stuff: userEnterData();
+				// do stuff: checkDataInStarClasses();
+				// do stuff: return/show result();
 				break;
 			case "2":
 				System.out.println("You chose 2.");
 				break;
 			case "q":
-				if (input.nextLine() == "q") {
-					System.out.println("Program ended.");
-					keepGoing = false;
 
-				}
+				System.out.println("Program ended.");
+				System.exit(0);
+				input.close();
+
 				break;
 			default:
 				System.out.println("Invalid choice. Please try something else.");
@@ -42,8 +43,6 @@ public class Start {
 
 			}
 		}
-
-		input.close();
 
 	}
 
