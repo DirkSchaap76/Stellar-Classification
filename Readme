@@ -16,7 +16,7 @@ To do, research:
 
 Example of proper signature of a star type: G2V (in this case, our sun).
 
-G is the type of sture, based on its temperature in degrees Kalvin.
+G is the type of star, based on its temperature in degrees Kalvin.
 2 is a subdivision based on temperature. 0 being the hottest, 9 coolest.
 	example: a G0 is hotter than a G1. 
 			 a G1 is hotter than a G2.
