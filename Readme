@@ -1,2 +1,43 @@
-Test
-This will be the readme file of this project
+Design goals of this program:
+
+create a stellar classification program
+
+1 users must be able to enter relevant data
+2 the program must check the entered data against the values in star classes
+3 the program must tell the user what type of star he/she just entered given the data provided
+4 the program must display via System.out.println what star types have been added with their proper signature
+
+
+To do, research: 
+
+1. what are the temperature ranges for the letter classifications (O through M).
+2. what are the temperature rangers for the sub divisions per class (0 through 9).
+3. what are the criteria that determine the size indicators (VII through 0).
+
+Example of proper signature of a star type: G2V (in this case, our sun).
+
+G is the type of sture, based on its temperature in degrees Kalvin.
+2 is a subdivision based on temperature. 0 being the hottest, 9 coolest.
+	example: a G0 is hotter than a G1. 
+			 a G1 is hotter than a G2.
+			 a G2 is hotter than a G3.
+			 etc.
+			 
+V is an indication of its size.
+The size types, from small to big, are: 
+	VII, white dwarfs 
+	 VI, sub dwarfs
+	  V, main-sequence
+	 IV, sub giants
+	III, normal giants
+	 II, bright giants
+	 Ib, less luminous super giants
+	 Ia, luminous super giants
+	  0, hyper giants, or extremely luminous super giants 
+	
+To do, coding:
+
+1 add fields for minimum- / maximum temperatures per star Class (O through M).
+	these fields must be int and final, since they are constants.
+	
+		 
