@@ -9,12 +9,18 @@ public class M_Type extends StarType {
 	public final int MIN_TEMPERATURE = 2400;
 	public final int MAX_TEMPERATURE = 3700;
 
+	public final String NAME = "M-Type";
+
 	public int getMinTemperature() {
 		return MIN_TEMPERATURE;
 	}
 
 	public int getMaxTermperature() {
 		return MAX_TEMPERATURE;
+	}
+
+	public String getName() {
+		return NAME;
 	}
 
 }

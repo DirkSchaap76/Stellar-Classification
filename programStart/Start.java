@@ -18,7 +18,8 @@ public class Start {
 
 		Observatory observatory = new Observatory();
 
-		observatory.starChecker(3);
+		observatory.starBuilder();
+		observatory.starChecker(3000);
 		System.out.println(observatory);
 
 	}

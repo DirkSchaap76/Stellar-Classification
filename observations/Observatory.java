@@ -14,14 +14,15 @@ import starClasses.O_Type;
 
 public class Observatory {
 
-	Scanner scanner = new Scanner(System.in);
+	// Scanner scanner = new Scanner(System.in);
 
 	public StarType starChecker(int obsTemp) {
-		obsTemp = scanner.nextInt();
-		System.out.println("Enter obsTemp: " + obsTemp);
+		// obsTemp = scanner.nextInt();
+		System.out.println("The temperature entered is: " + obsTemp);
 		for (StarType s : starTypes) {
 			if (obsTemp > s.getMinTemperature() & obsTemp < s.getMaxTermperature()) {
-				System.out.println("The star is an " + " star.");
+				System.out.println(s.getMinTemperature() + " - " + s.getMaxTermperature());
+				System.out.println("The star is an " + s.getName() + " star.");
 
 			}
 		}
