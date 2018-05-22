@@ -1,6 +1,7 @@
 package observations;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import starClasses.StarType;
 import starClasses.A_Type;
@@ -12,13 +13,18 @@ import starClasses.M_Type;
 import starClasses.O_Type;
 
 public class Observatory {
-	// int temperatureInput;
+
+	Scanner scanner = new Scanner(System.in);
 
 	public StarType starChecker(int obsTemp) {
+		obsTemp = scanner.nextInt();
+		System.out.println("Enter obsTemp: " + obsTemp);
+		for (int x = 0; x < starTypes.size(); x++) {
+			if (obsTemp > O_Type.MIN_TEMPERATURE & obsTemp < O_Type.MAX_TEMPERATURE) {
+				System.out.println("The star is an O-Type star.");
 
-		System.out.println("obsTemp is: " + obsTemp);
-		// obsTemp = 10;
-
+			}
+		}
 		return null;
 
 	}
@@ -35,8 +41,8 @@ public class Observatory {
 		K_Type K = new K_Type();
 		M_Type M = new M_Type();
 
-		starTypes.add(O); // kan ook
-		starTypes.add(B); // is misschien duidelijker
+		starTypes.add(O);
+		starTypes.add(B);
 		starTypes.add(A);
 		starTypes.add(F);
 		starTypes.add(G);

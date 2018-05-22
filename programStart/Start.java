@@ -17,7 +17,8 @@ public class Start {
 	public static void main(String[] args) {
 
 		Observatory observatory = new Observatory();
-		observatory.starChecker(10);
+
+		observatory.starChecker(3);
 		System.out.println(observatory);
 
 	}
