@@ -6,7 +6,15 @@ package starClasses;
 
 public class M_Type extends StarType {
 	// temperatures are in degrees Kelvin
-	public static final int MIN_TEMPERATURE = 2400;
-	public static final int MAX_TEMPERATURE = 3700;
+	public final int MIN_TEMPERATURE = 2400;
+	public final int MAX_TEMPERATURE = 3700;
+
+	public int getMinTemperature() {
+		return MIN_TEMPERATURE;
+	}
+
+	public int getMaxTermperature() {
+		return MAX_TEMPERATURE;
+	}
 
 }

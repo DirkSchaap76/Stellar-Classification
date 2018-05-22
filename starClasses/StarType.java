@@ -1,7 +1,9 @@
 package starClasses;
 
-public class StarType {
+public abstract class StarType {
 
-	// variable min/max temp, later toevoegen
+	public abstract int getMinTemperature();
+
+	public abstract int getMaxTermperature();
 
 }

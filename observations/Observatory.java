@@ -19,9 +19,9 @@ public class Observatory {
 	public StarType starChecker(int obsTemp) {
 		obsTemp = scanner.nextInt();
 		System.out.println("Enter obsTemp: " + obsTemp);
-		for (int x = 0; x < starTypes.size(); x++) {
-			if (obsTemp > O_Type.MIN_TEMPERATURE & obsTemp < O_Type.MAX_TEMPERATURE) {
-				System.out.println("The star is an O-Type star.");
+		for (StarType s : starTypes) {
+			if (obsTemp > s.getMinTemperature() & obsTemp < s.getMaxTermperature()) {
+				System.out.println("The star is an " + " star.");
 
 			}
 		}
