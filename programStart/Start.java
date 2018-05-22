@@ -16,12 +16,16 @@ public class Start {
 
 	public static void main(String[] args) {
 
-		Observatory observatory = new Observatory();
-
-		observatory.starBuilder();
-		observatory.starChecker(3000);
-		System.out.println(observatory);
+		testMethod();
 
 	}
 
+	public static void testMethod() {
+		Observatory observatory = new Observatory();
+
+		observatory.printStars();
+
+		observatory.starBuilder();
+		observatory.starChecker(35423);
+	}
 }

@@ -1,7 +1,6 @@
 package observations;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import starClasses.StarType;
 import starClasses.A_Type;
@@ -14,15 +13,14 @@ import starClasses.O_Type;
 
 public class Observatory {
 
-	// Scanner scanner = new Scanner(System.in);
-
 	public StarType starChecker(int obsTemp) {
-		// obsTemp = scanner.nextInt();
+
 		System.out.println("The temperature entered is: " + obsTemp);
 		for (StarType s : starTypes) {
 			if (obsTemp > s.getMinTemperature() & obsTemp < s.getMaxTermperature()) {
-				System.out.println(s.getMinTemperature() + " - " + s.getMaxTermperature());
 				System.out.println("The star is an " + s.getName() + " star.");
+				System.out.println("And it's temperature range is between " + s.getMinTemperature()
+						+ " degrees Kelvin and " + s.getMaxTermperature() + " degrees Kelvin.");
 
 			}
 		}
@@ -33,15 +31,16 @@ public class Observatory {
 	ArrayList<StarType> starTypes = new ArrayList();
 
 	public void starBuilder() {
-
-		O_Type O = new O_Type();
+		// creates new Star objects
+		O_Type O = new O_Type(); // hottest star type
 		B_Type B = new B_Type();
 		A_Type A = new A_Type();
 		F_Type F = new F_Type();
 		G_Type G = new G_Type();
 		K_Type K = new K_Type();
-		M_Type M = new M_Type();
+		M_Type M = new M_Type(); // coolest star type
 
+		// adds the star objects to the ArrayList
 		starTypes.add(O);
 		starTypes.add(B);
 		starTypes.add(A);
@@ -51,6 +50,8 @@ public class Observatory {
 		starTypes.add(M);
 
 	}
+
+	// small test method that prints out the Star object's names
 
 	public void printStars() {
 		for (StarType s : starTypes) {
