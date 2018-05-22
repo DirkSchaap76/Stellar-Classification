@@ -4,7 +4,7 @@
  */
 package starClasses;
 
-public class O_Type {
+public class O_Type extends StarType {
 	// temperatures are in degrees Kelvin
 	public static final int MIN_TEMPERATURE = 30_000;
 	public static final int MAX_TEMPERATURE = 50_000;
