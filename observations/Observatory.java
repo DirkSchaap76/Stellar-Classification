@@ -18,7 +18,7 @@ public class Observatory {
 		System.out.println("The temperature entered is: " + obsTemp);
 		for (StarType s : starTypes) {
 			if (obsTemp > s.getMinTemperature() & obsTemp < s.getMaxTermperature()) {
-				System.out.println("The star is an " + s.getName() + " star.");
+				System.out.println("This makes it an " + s.getName() + " type star.");
 				System.out.println("And it's temperature range is between " + s.getMinTemperature()
 						+ " degrees Kelvin and " + s.getMaxTermperature() + " degrees Kelvin.");
 
